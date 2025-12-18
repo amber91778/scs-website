@@ -1,0 +1,36 @@
+
+@keyframes scroll {
+    from {
+        transform: translateX(120%);
+   }
+    to {
+        transform: translateX(-250%);
+   }
+}
+
+.slider {
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+.slider .slide-track{
+    
+    animation: scroll 40s linear infinite;
+    display: flex ;
+    width: calc(280px * 4);
+}
+
+.slider .slide-track:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.slider .slide {
+    height: auto;
+    width: auto;
+    padding: 20px;
+}
